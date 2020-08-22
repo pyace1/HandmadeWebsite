@@ -37,6 +37,11 @@ ul{
 	margin:auto;
 	
 }
+.conteiner::after{
+	display:block;
+	content:"";
+	clear:both;
+}
 h2{
 	font-size:2rem;
 	text-align: center;
@@ -123,4 +128,56 @@ SERVICES
 .services article h3{
 	font-size:1.5rem;
 	padding-bottom:20px;
+}
+/********
+PRODUCTS
+*********/
+.products{
+	padding: var(--padding);
+	background: var(--lightgray);
+	text-align:center;
+}
+.products img{
+	width:100%;
+}
+.products article{
+	width:25%;
+	float:left;
+	padding:30px;
+}
+.products h5{
+	font-size:1.5rem;
+	padding: 20px 0;
+}
+/********
+FOOTER
+*********/
+footer{
+	padding: var(--padding);
+	background: var(--gray);
+	color: var(--white);
+	text-align: center;
+}
+footer .fa-heart {
+	color:red;
+}
+footer .fab {
+	color: var(--orange);
+	margin: 10px;
+	font-size: 2rem;
+}
+footer .fab:hover {
+	color: var(--white);
+	transition: var(--transition);
+	
+}
+/********
+RESPONSIVE
+*********/
+@media(max-width:768px){
+header h1 {
+	font-size: 2rem;
+	margin-left:20px;
+	
+}
 }
